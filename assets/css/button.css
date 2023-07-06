@@ -1,0 +1,12 @@
+.btn__primario {
+    display: inline-flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: #2a7ae4;
+}
+
+.btn__primario:hover {
+    background-color: #5595e9;
+}

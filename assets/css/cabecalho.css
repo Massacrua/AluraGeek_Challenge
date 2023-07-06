@@ -1,0 +1,55 @@
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.cabecalho__topo {
+    display: flex;
+    justify-content: space-between;
+    width: 71rem;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.cabecalho__logo-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo__alurageek {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    width: 3.12481rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+}
+
+.logo__texto {
+    width: 7.87519rem;
+    height: 1.15625rem;
+    flex-shrink: 0;
+}
+
+.barra__pesquisa {
+    display: flex;
+    width: 24rem;
+    justify-content: space-between;
+    background-color: var(--preto-50);
+    padding: 2rem;
+    border-radius: 1.25rem;
+}
+
+.barra__pesquisa-input {
+    width: 100%;
+    background-color: transparent;
+}
+
+
+
