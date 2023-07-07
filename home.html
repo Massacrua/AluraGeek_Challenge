@@ -8,31 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/button.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/cabecalho_banner.css">
     <title>AluraGeek - Home</title>
 </head>
 <body>
     <div class="all">
         <header class="cabecalho">
             <div class="cabecalho__topo">
-                <div class="cabecalho__logo-pesquisa">
-                    <div class="logo__alurageek">
-                        <img src="assets/img/logo__img.svg" alt="Logo da AluraGeek" class="logo__img">
-                        <img src="assets/img/logo__texto.svg" alt="Texto do logo AluraGeek" class="logo__texto">
+                <div class="cabecalho__conteudo">
+                    <div class="cabecalho__logo-pesquisa">
+                        <a class="logo__alurageek" href="#">
+                            <img src="assets/img/logo__img.svg" alt="Logo da AluraGeek" class="logo__img">
+                            <img src="assets/img/logo__texto.svg" alt="Texto do logo AluraGeek" class="logo__texto">
+                        </a>
+                        <div class="barra__pesquisa">
+                            <input type="text" name="barra-pesquisa" placeholder="O que deseja encontrar?" class="barra__pesquisa-input">
+                            <img src="assets/img/lupa__pesquisa.svg" alt="Símbolo de lupa na barra de pesquisa" class="barra__pesquisa-lupa">
+                        </div>
                     </div>
-                    <div class="barra__pesquisa">
-                        <input type="text" name="barra-pesquisa" placeholder="O que deseja encontrar?" class="barra__pesquisa-input">
-                        <img src="assets/img/lupa__pesquisa.svg" alt="Símbolo de lupa na barra de pesquisa" class="barra__pesquisa-lupa">
-                    </div>
-                </div>
-                
-                <button class="btn btn__login">Login</button>
+                    <button class="btn btn__secundario btn__login">Login</button>
+                </div>       
             </div>
             <div class="cabecalho__banner">
                 <div class="banner__conteudo">
                     <h3 class="banner__titulo">Dezembro Promocional</h3>
                     <p class="banner__texto">Produtos selecionados com 33% de desconto</p>
-                    <button class="btn btn__ver-consoles">Ver Consoles</button>
+                    <button class="btn btn__primario btn__ver-consoles"><a href="#consoles">Ver Consoles</a></button>
                 </div>
             </div>
         </header>
@@ -83,7 +86,7 @@
                 </div>
             </div>
         </section>
-        <section class="produtos produtos__consoles">
+        <section class="produtos produtos__consoles" id="consoles">
             <div class="produtos__topo">
                 <h4 class="produtos__titulo"></h4>
                 <button class="produtos__ver-tudo">

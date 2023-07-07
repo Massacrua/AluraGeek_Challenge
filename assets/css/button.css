@@ -1,12 +1,38 @@
-.btn__primario {
+.btn {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
     display: inline-flex;
     padding: 1rem;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    background-color: #2a7ae4;
+    border: none;
+
+    transition: background 0.25s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn__primario {   
+    color: var(--branco);
+    background-color: var(--azul-100);
 }
 
 .btn__primario:hover {
-    background-color: #5595e9;
+    background-color: var(--azul-80);
+}
+
+.btn__secundario {
+    background-color: white;
+    border: 1px solid var(--azul-100);
+}
+
+.btn__secundario:hover {
+    background-color: var(--azul-20);
 }
