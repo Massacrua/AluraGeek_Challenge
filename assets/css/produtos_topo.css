@@ -1,0 +1,42 @@
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.produtos__topo {
+    display: flex;
+    width: 71rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos__titulo {
+    color: var(--preto-100);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.produtos__ver-tudo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--branco);
+
+}
+
+.ver-tudo__texto {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ver-tudo__seta {
+    width: 1.5rem;
+    height: 1.5rem;
+}
