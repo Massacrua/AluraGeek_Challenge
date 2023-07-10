@@ -1,0 +1,38 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.rodape__contato {
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 7.18rem;
+    align-self: stretch;
+    background: var(--azul-10);
+}
+
+.contato__conteudo {
+    display: flex;
+    width: 71rem;
+    align-items: flex-start;
+    gap: 7rem;
+}
+
+.contato__links {
+    display: flex;
+    width: 11rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-shrink: 0;
+}
+
+.contato__link {
+    color: var(--preto-100);
+    font-size: 1rem;
+    
+}

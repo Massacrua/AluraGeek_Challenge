@@ -1,0 +1,19 @@
+.logo__alurageek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    flex-shrink: 0;
+}
+
+.logo__img {
+    width: 3.125rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+}
+
+.logo__texto {
+    width: 8rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+}

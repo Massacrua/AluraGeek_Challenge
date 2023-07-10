@@ -15,9 +15,10 @@
     
 }
 
-.produto__link {
+.produto__link, .produto__link:visited {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: var(--azul-100);
 }
