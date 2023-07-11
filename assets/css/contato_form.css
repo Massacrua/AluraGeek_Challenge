@@ -1,0 +1,81 @@
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.form__legend {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+    color: var(--preto-100);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;   
+}
+
+.form__fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.input__box {
+    display: flex;
+    padding-top: 0.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    grid-gap: 0.4375rem;
+
+    background: var(--branco);
+    border-radius: 0.25rem;
+}
+
+.input__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    padding: 0 0.75rem;
+}
+
+.input__label {
+    font-family: Raleway;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1;
+    display: flex;
+    flex-direction: column; 
+}
+
+.input__label-hide {
+    display: none;
+}
+
+.input__input {
+    border: none;
+    color: #464646;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.input__input:focus {
+    outline: none;
+}
+
+.input__line {
+    background-color: var(--preto-30);
+    width: 35rem;
+    height: 0.0625rem;
+
+    border-radius: 1px
+}

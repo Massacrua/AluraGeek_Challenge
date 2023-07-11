@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/button.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/produtos_lista.css">
     <link rel="stylesheet" href="assets/css/produto.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="assets/css/contato_form.css">
     <title>AluraGeek - Home</title>
 </head>
 <body>
@@ -202,22 +203,27 @@
                             <li><a href="#" class="contato__link">Anuncie aqui</a></li>
                         </ul>
                     </div>
-                    <div class="contato__fale-conosco">
+                    <div class="contato__faleconosco">
                         <form class="contato__form">
-                            <legend>Fale conosco</legend>
-                            <fieldset>
+                            <legend class="form__legend">Fale conosco</legend>
+                            <fieldset class="form__fieldset">
                                 <div class="input__box">
-                                    <label for="nome">Nome
-                                        <input type="text" name="nome" id="nome" class="form__nome">
-                                    </label>
+                                    <div class="input__content">
+                                        <label for="nome" class="input__label input__label-hide">Nome</label>
+                                        <input type="text" name="nome" id="nome" class="input__input" placeholder="Nome" autocomplete="off" minlength="3" required>
+                                    </div>
+                                    <div class="input__line"></div>
                                 </div>
                                 <div class="input__box">
-                                    <label for="mensagem">Mensagem
-                                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" style="resize: none;"></textarea>
-                                    </label>
+                                    <div class="input__content">
+                                        <label for="mensagem" class="input__label input__label-hide">Escreva sua mensagem</label>
+                                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" style="resize: none;" placeholder="Escreva sua mensagem" class="input__input" minlength="10" maxlength="200" required ></textarea>                                      
+                                    </div>
+                                    <div class="input__line"></div>
                                 </div>
+                                <script src="formContato.js"></script>
                             </fieldset>
-                            <button type="submit" class="btn btn__submit">Enviar mensagem</button>
+                            <button type="submit" class="btn btn__submit btn__primario">Enviar mensagem</button>
                         </form>
                     </div>
                 </div>

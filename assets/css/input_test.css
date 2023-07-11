@@ -1,0 +1,75 @@
+.input__test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+
+    width: 35rem;
+}
+
+.input__outbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.input__box {
+    display: flex;
+    padding-top: 0.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    grid-gap: 0.4375rem;
+    align-self: stretch;
+
+    background: var(--branco);
+    border-radius: 0.25rem;
+}
+
+.input__elements {
+    display: flex;
+    padding: 0 0.75rem;
+    align-items: center;
+}
+
+.input__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    flex: 1 0 0;
+}
+
+.input__label {
+    font-family: Raleway;
+    color: #a2a2a2;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1;
+    display: flex;
+    flex-direction: column; 
+}
+
+.input__label-hide {
+    display: none;
+}
+
+.input__input {
+    border: none;
+    color: #464646;
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.input__input:focus {
+    outline: none;
+}
+
+.input__line {
+    background-color: #c8c8c8;
+    width: 35rem;
+    height: 0.0625rem;
+}
