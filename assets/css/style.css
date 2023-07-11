@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
 }
 
 .all {
@@ -26,7 +25,8 @@ body {
     gap: 4rem;
     align-items: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -34,4 +34,12 @@ a:hover {
     text-decoration: underline var(--azul-100);
     scale: 1.02;
     transition: ease-in;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .all {
+        width: 48rem;
+        gap: 0;
+    }
 }

@@ -2,6 +2,7 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
+    width: 44rem;
 }
 
 .produto {
@@ -9,4 +10,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .produtos__lista {
+        align-self: stretch;
+        justify-content: flex-start;
+        overflow-x: hidden;
+    }
+
+    .produto {
+        flex: 1 0 0;
+    }
 }

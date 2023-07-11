@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
+    width: 100%;
 }
 
 .cabecalho__topo {
@@ -73,4 +74,23 @@
     color: var(--azul-100);
 }
 
+@media screen and (max-width: 1023px) {
+    .cabecalho__conteudo {
+        display: flex;
+        width: auto;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
 
+    .barra__pesquisa {
+        display: flex;
+        width: 17rem;
+        padding: 0.5rem 1rem;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--preto-05);
+        border-radius: 1.25rem;
+    }
+}

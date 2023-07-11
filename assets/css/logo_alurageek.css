@@ -17,3 +17,21 @@
     height: 1.125rem;
     flex-shrink: 0;
 }
+
+@media screen and (max-width: 1023px) {
+    .logo__alurageek {
+        width: 6.25rem;
+    }
+
+    .logo__img {
+        width: 1.77rem;
+        height: 1.75rem;
+        flex-shrink: 0;
+    }
+
+    .logo__texto {
+        width: 4.47rem;
+        height: 0.65rem;
+        flex-shrink: 0;
+    }
+}

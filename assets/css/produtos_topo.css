@@ -41,3 +41,23 @@
     width: 1.5rem;
     height: 1.5rem;
 }
+
+@media screen and (max-width: 1023px) {
+    .produtos {
+        gap: 1rem;
+        width: 48rem;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .produtos__topo {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .produtos__titulo {
+        font-size: 1.375rem;
+    }
+}

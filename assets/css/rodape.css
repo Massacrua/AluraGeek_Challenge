@@ -57,3 +57,26 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 1023px) {
+    .rodape__contato {
+        padding: 2rem;
+        gap: 7.18rem;
+        align-self: stretch;
+        background: var(--azul-10);
+    }
+
+    .contato__conteudo {
+        width: 100%;
+        gap: 1rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        max-height: 20rem;
+        align-items: center;
+    }
+
+    .logo__alurageek-footer {
+        scale: 1.3;
+    }
+}
