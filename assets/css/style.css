@@ -43,3 +43,10 @@ a:hover {
         gap: 0;
     }
 }
+
+@media screen and (max-width: 767px) {
+
+    .all {
+        width: 22.5rem;
+    }
+}

@@ -80,3 +80,26 @@
         scale: 1.3;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .rodape__contato {
+        padding: 1rem;
+        max-height: none;
+        overflow: auto;
+
+    }
+
+    .contato__conteudo {
+        gap: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    .logo__alurageek-footer {
+        scale: 1.8;
+    }
+
+    .contato__links {
+        align-items: center;
+        gap: 1rem;
+    }
+}

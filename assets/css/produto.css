@@ -35,3 +35,9 @@
         align-self: stretch;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .produto__img {
+        width: 9.75rem;
+    }
+}

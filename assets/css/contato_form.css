@@ -90,3 +90,9 @@
         width: 27rem;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .contato__form {
+        width: 22.5rem;
+    }
+}

@@ -74,6 +74,10 @@
     color: var(--azul-100);
 }
 
+#lupa__mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
     .cabecalho__conteudo {
         display: flex;
@@ -92,5 +96,24 @@
         gap: 0.5rem;
         background: var(--preto-05);
         border-radius: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cabecalho__conteudo {
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    .barra__pesquisa {
+        display: none;
+    }
+
+    #lupa__mobile {
+        display: block;
+    }
+    
+    .btn__login {
+        width: 8.3125rem;
     }
 }
