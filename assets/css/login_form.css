@@ -1,9 +1,23 @@
-.contato__form {
+.cabecalho {
+    background-color: var(--branco);
+}
+
+.all {
+    background-color: var(--preto-05);
+    gap: 5.75rem;
+}
+
+.login__section {
+    width: 26.5rem;
+    height: 18.2rem;
+}
+
+.login__form {
     display: flex;
     flex-direction: column;
-    width: 35rem;
-    align-items: flex-start;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.61rem;
     flex-shrink: 0;
 }
 
@@ -15,10 +29,12 @@
     color: var(--preto-100);
     font-style: normal;
     font-weight: 700;
-    line-height: normal;   
+    line-height: normal; 
+    text-align: center; 
+    font-size: 1.125rem; 
 }
 
-.form__fieldset {
+.login__fieldset {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,25 +42,27 @@
     align-self: stretch;
 }
 
-.input__box {
+.login-input__box {
     display: flex;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.9rem;
 
-    grid-gap: 0.4375rem;
 
     background: var(--branco);
     border-radius: 0.25rem;
 }
 
-.input__content {
+.login-input__content {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 0.25rem;
     padding: 0 0.75rem;
     overflow: hidden;
+    color: var(--preto-50);
 }
 
 .input__label {
@@ -73,11 +91,15 @@
     outline: none;
 }
 
-.input__line {
+.login-input__line {
     background-color: var(--preto-30);
-    width: 35rem;
     height: 0.0625rem;
-    border-radius: 1px
+    border-radius: 1px;
+    width: 100%;
+}
+
+.login__submit {
+    width: 100%;
 }
 
 @media screen and (max-width: 1023px) {
@@ -99,5 +121,9 @@
 
     .input__line {
         width: 20.5rem;
+    }
+
+    .login__section {
+        width: 17.2rem;
     }
 }

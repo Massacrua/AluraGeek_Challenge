@@ -61,8 +61,6 @@
     .rodape__contato {
         padding: 2rem;
         gap: 7.18rem;
-        align-self: stretch;
-        background: var(--azul-10);
     }
 
     .contato__conteudo {
@@ -86,12 +84,12 @@
         padding: 1rem;
         max-height: none;
         overflow: auto;
-
     }
 
     .contato__conteudo {
         gap: 1rem;
         flex-wrap: nowrap;
+        max-height: none;
     }
 
     .logo__alurageek-footer {

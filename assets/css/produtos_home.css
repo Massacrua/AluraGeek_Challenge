@@ -1,0 +1,33 @@
+.produtos {
+    padding: 4rem;
+}
+
+.produtos__topo {
+    width: 100%;
+}
+
+.produtos__lista {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.produto__serial {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--preto-100);
+}
+
+@media screen and (max-width: 1023px) {
+    .produtos {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .produto__img {
+        width: 8.75rem;
+    }
+}

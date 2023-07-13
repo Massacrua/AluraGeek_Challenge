@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/logo_alurageek.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/cabecalho_banner.css">
+    <link rel="stylesheet" href="assets/css/produtos_topo.css">
+    <link rel="stylesheet" href="assets/css/produtos_lista.css">
+    <link rel="stylesheet" href="assets/css/produto.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="assets/css/contato_form.css">
+    <link rel="stylesheet" href="assets/css/login_form.css">
+    <title>AluraGeek - Home</title>
+</head>
+<body>
+    <div class="all">
+        <header class="cabecalho">
+            <div class="cabecalho__topo">
+                <div class="cabecalho__conteudo">
+                    <div class="cabecalho__logo-pesquisa">
+                        <a class="logo__alurageek" href="/home.html">
+                            <img src="assets/img/logo__img.svg" alt="Logo da AluraGeek" class="logo__img">
+                            <img src="assets/img/logo__texto.svg" alt="Texto do logo AluraGeek" class="logo__texto">
+                        </a>
+                        <div class="barra__pesquisa">
+                            <input type="text" name="barra-pesquisa" placeholder="O que deseja encontrar?"
+                                class="barra__pesquisa-input">
+                            <img src="assets/img/lupa__pesquisa.svg" alt="Símbolo de lupa na barra de pesquisa"
+                                class="barra__pesquisa-lupa">
+                        </div>
+                    </div>
+                    <img src="assets/img/lupa__mobile.svg" alt="Símbolo de lupa na barra de pesquisa"
+                        class="barra__pesquisa-lupa" id="lupa__mobile">
+                </div>
+            </div>
+        </header>
+        <section class="login__section">
+            <form class="login__form">
+                <legend class="form__legend">Iniciar Sessão</legend>
+                <fieldset class="login__fieldset">
+                    <div class="login-input__box">
+                        <div class="login-input__content">
+                            <label for="email" class="input__label input__label-hide">Escreva seu email</label>
+                            <input type="email" name="email" id="email" class="input__input" placeholder="Escreva seu email" autocomplete="off" required>
+                        </div>
+                        <div class="login-input__line"></div>
+                    </div>
+                    <div class="login-input__box">
+                        <div class="login-input__content">
+                            <label for="mensagem" class="input__label input__label-hide">Escreva sua
+                                senha</label>
+                            <input name="senha" id="senha" type="password" style="resize: none;"placeholder="Escreva sua senha" class="input__input" maxlength="30" required></input>
+                        </div>
+                        <div class="login-input__line"></div>
+                    </div>
+                    <button type="submit" class="btn login__submit btn__primario">Login</button>
+                </fieldset>
+            </form>
+        </section>
+        <footer class="rodape">
+            <div class="rodape__contato">
+                <div class="contato__conteudo">
+                    <div class="logo__alurageek logo__alurageek-footer">
+                        <img src="assets/img/logo__img.svg" alt="Logo da AluraGeek" class="logo__img">
+                        <img src="assets/img/logo__texto.svg" alt="Texto do logo AluraGeek" class="logo__texto">
+                    </div>
+                    <div>
+                        <ul class="contato__links">
+                            <li><a href="#" class="contato__link">Quem somos nós</a></li>
+                            <li><a href="#" class="contato__link">Política de privacidade</a></li>
+                            <li><a href="#" class="contato__link">Programa fidelidade</a></li>
+                            <li><a href="#" class="contato__link">Nossas lojas</a></li>
+                            <li><a href="#" class="contato__link">Quero ser franqueado</a></li>
+                            <li><a href="#" class="contato__link">Anuncie aqui</a></li>
+                        </ul>
+                    </div>
+                    <div class="contato__faleconosco">
+                        <form class="contato__form">
+                            <legend class="form__legend">Fale conosco</legend>
+                            <fieldset class="form__fieldset">
+                                <div class="input__box">
+                                    <div class="input__content">
+                                        <label for="nome" class="input__label input__label-hide">Nome</label>
+                                        <input type="text" name="nome" id="nome" class="input__input" placeholder="Nome" autocomplete="off" minlength="3" required>
+                                    </div>
+                                    <div class="input__line"></div>
+                                </div>
+                                <div class="input__box">
+                                    <div class="input__content">
+                                        <label for="mensagem" class="input__label input__label-hide">Escreva sua mensagem</label>
+                                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" style="resize: none;" placeholder="Escreva sua mensagem" class="input__input" minlength="10" maxlength="200" required ></textarea>                                      
+                                    </div>
+                                    <div class="input__line"></div>
+                                </div>
+                                <script src="formContato.js"></script>
+                            </fieldset>
+                            <button type="submit" class="btn btn__submit btn__primario">Enviar mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape__rodape">
+                <p class="rodape__texto">Desenvolvido por Massacrua</p>
+                <p class="rodape__texto">jul/2023</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

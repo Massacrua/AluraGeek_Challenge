@@ -16,7 +16,7 @@
     .produtos__lista {
         align-self: stretch;
         justify-content: flex-start;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .produto {
