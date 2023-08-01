@@ -165,9 +165,10 @@
                                     <div class="input__content">
                                         <label for="nome" class="input__label input__label-hide">Nome</label>
                                         <input type="text" name="nome" id="nome" class="input__input" placeholder="Nome"
-                                            autocomplete="off" minlength="3" required>
+                                            autocomplete="off" minlength="3" maxlength="40" required>
                                     </div>
-                                    <div class="input__line"></div>
+                                    <span class="error__msg error__msg-hidden">Escreva seu nome.</span>                                  
+                                    <div class="input__line"></div> 
                                 </div>
                                 <div class="input__box">
                                     <div class="input__content">
@@ -175,8 +176,9 @@
                                             mensagem</label>
                                         <textarea name="mensagem" id="mensagem" cols="30" rows="5" style="resize: none;"
                                             placeholder="Escreva sua mensagem" class="input__input" minlength="10"
-                                            maxlength="200" required></textarea>
+                                            maxlength="120" required></textarea>
                                     </div>
+                                    <span class="error__msg error__msg-hidden">Escreva uma mensagem maior.</span>                                  
                                     <div class="input__line"></div>
                                 </div>
                                 <script src="formContato.js"></script>

@@ -80,6 +80,17 @@
     border-radius: 1px
 }
 
+.error__msg{
+    font-size: 0.75rem;
+    color: red;
+    margin-left: 0.75rem;
+    display: block;
+}
+
+.error__msg-hidden {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
     .contato__form {
         width: 27rem;
