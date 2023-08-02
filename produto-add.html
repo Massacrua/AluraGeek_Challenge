@@ -57,39 +57,45 @@
                             <label for="img-url" class="input__label input__label-hide">URL da imagem</label>
                             <input type="text" name="img-url" id="img-url" class="input__input" placeholder="URL da imagem" autocomplete="off" required>
                         </div>
-                        <div class="produto__inputline"></div>
+                        <span class="error__msg error__msg-hidden">Inválido.</span>  
+                        <div class="produto__inputline input__line"></div>
                     </div>
                     <div class="produto__inputbox">
                         <div class="produto__inputcontent">
                             <label for="categoria" class="input__label input__label-hide">Categoria</label>
                             <input name="categoria" id="categoria" type="text" placeholder="Categoria" class="input__input" required></input>
                         </div>
-                        <div class="produto__inputline"></div>
+                        <span class="error__msg error__msg-hidden">Inválido.</span>  
+                        <div class="produto__inputline input__line"></div>
                     </div>
                     <div class="produto__inputbox">
                         <div class="produto__inputcontent">
                             <label for="produto-nome" class="input__label input__label-hide">Nome do produto</label>
-                            <input name="produto-nome" id="produto-nome" placeholder="Nome do produto" type="text"  class="input__input" maxlength="30" required></input>
+                            <input name="produto-nome" id="produto-nome" placeholder="Nome do produto" type="text"  class="input__input" maxlength="20" required></input>
                         </div>
-                        <div class="produto__inputline"></div>
+                        <span class="error__msg error__msg-hidden">Inválido.</span> 
+                        <div class="produto__inputline input__line"></div>
                     </div>
                     <div class="produto__inputbox">
                         <div class="produto__inputcontent">
                             <label for="produto-preco" class="input__label input__label-hide">Preço do produto</label>
-                            <input name="produto-preco" id="produto-preco" type="text" placeholder="Preço do produto" class="input__input" maxlength="8" required></input>
+                            <input name="produto-preco" id="produto-preco" type="number" placeholder="Preço do produto" class="input__input" required min="0" max="9999"></input>
                         </div>
-                        <div class="produto__inputline"></div>
+                        <span class="error__msg error__msg-hidden">Inválido.</span> 
+                        <div class="produto__inputline input__line"></div>
                     </div>
                     <div class="produto__inputbox">
                         <div class="produto__inputcontent">
                             <label for="produto-descricao" class="input__label input__label-hide">Descrição do produto</label>
-                            <textarea name="produto-descricao" id="produto-descricao" style="resize: none;" placeholder="Descrição do produto" class="input__input" cols="30" rows="5" required></textarea>
+                            <textarea name="produto-descricao" id="produto-descricao" style="resize: none;" placeholder="Descrição do produto" class="input__input" maxlength="150" cols="30" rows="5" required></textarea>
                         </div>
-                        <div class="produto__inputline"></div>
+                        <span class="error__msg error__msg-hidden">Inválido.</span> 
+                        <div class="produto__inputline input__line"></div>
                     </div>
                     <button type="submit" class="btn addproduto__submit btn__primario">Adicionar produto</button>
                 </fieldset>
             </form>
+            <script src="./formAddProduto.js" type="module"></script>
         </section>
         
         <footer class="rodape">
@@ -133,7 +139,7 @@
                                     <span class="error__msg error__msg-hidden">Escreva uma mensagem maior.</span>                                  
                                     <div class="input__line"></div>
                                 </div>
-                                <script src="formContato.js"></script>
+                                <script src="formAddProduto.js" type="module"></script>
                             </fieldset>
                             <button type="submit" class="btn btn__submit btn__primario">Enviar mensagem</button>
                         </form>
@@ -146,7 +152,7 @@
             </div>
         </footer>
     </div>
-    <script src="formContato.js"></script>
+    <script src="formContato.js" type="module"></script>
 </body>
 
 </html>

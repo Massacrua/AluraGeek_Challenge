@@ -1,3 +1,8 @@
+.produto__img {
+    width: 10rem;
+    height: 10rem;
+}
+
 .produto__titulo {
     color: var(--preto-100);
     font-style: normal;
