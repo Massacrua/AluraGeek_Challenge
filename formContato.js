@@ -1,4 +1,5 @@
 import { errorMarkers } from "./showErrorMarkers.js";
+import buscarProduto from "./buscaProduto.js"
 (() => {
 const inputs = document.querySelectorAll(".input__input")
 
@@ -39,6 +40,15 @@ function showLabel(labelClassList) {
 function hideLabel(labelClassList) {
     labelClassList.add("input__label-hide")
 }
+
+const botaoPesquisa = document.querySelector(".barra__pesquisa-lupa")
+botaoPesquisa.addEventListener("click", evento => {
+    const stringPesquisa = document.querySelector(".barra__pesquisa-input").value
+    if (stringPesquisa != "" && document.querySelector("title").innerText != "AluraGeek - Produtos") {
+        window.location.href = "./produtos-home.html"
+    }
+    buscarProduto(evento, stringPesquisa)
+})
 
 
 })();

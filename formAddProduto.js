@@ -1,4 +1,5 @@
 import { conectaAPI } from "./conectaApi.js"
+
 const addProductForm = document.querySelector(".addproduto__form")
 addProductForm.addEventListener("submit", event => {
     event.preventDefault()

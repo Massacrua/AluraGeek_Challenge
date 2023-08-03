@@ -29,7 +29,15 @@ async function criaNovoProduto(nome, preco, categoria, descricao, imageurl) {
     return conexaoConvertida
 }
 
+async function buscaProduto(stringPesquisa) {
+    const conexao = await fetch(`${endpoint}?nome=${stringPesquisa}`)
+    const conexaoConvertida = await conexao.json()
+
+    return conexaoConvertida
+}
+
 export const conectaAPI = {
     getProducts,
-    criaNovoProduto
+    criaNovoProduto,
+    buscaProduto
 }

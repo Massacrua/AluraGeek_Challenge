@@ -1,14 +1,14 @@
 import { conectaAPI } from "./conectaApi.js";
-const listaDeProdutos = document.querySelector(".produtos__lista")
+const listaDeProdutos = document.querySelector(".produtos__lista-home")
 
-function constroiProduto(nome, preco, descricao, imageurl) {
+export default function constroiProduto(nome, preco, descricao, imageurl) {
     const produto = document.createElement("div")
     produto.className = "produto"
     produto.innerHTML = `
         <img src="${imageurl}" alt="${descricao}" class="produto__img">
         <p class="produto__titulo">${nome}</p>
         <p class="produto__preco">R$${preco}</p>
-        <p class="produto__serial">#${Math.round(Math.random() * 10000000)}</p>
+        <p class="produto__serial">#${Math.round(Math.random() * 10**7)}</p>
     `
 
     return produto
@@ -22,4 +22,6 @@ async function listaProdutos() {
         alert("Erro ao carregar lista de produtos")
     }
 }
-listaProdutos()
+if (document.querySelector("title").innerText == "AluraGeek - Produtos") {
+    listaProdutos()
+}
