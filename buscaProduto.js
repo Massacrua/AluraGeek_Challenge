@@ -1,5 +1,5 @@
 import { conectaAPI } from "./conectaApi.js";
-import constroiProduto from "./listaProdutos.js";
+import { listaEConstroiProdutos } from "./listaProdutos.js"
 
 export default async function buscarProduto(evento, stringPesquisa) {
     evento.preventDefault()
@@ -13,7 +13,7 @@ export default async function buscarProduto(evento, stringPesquisa) {
         listaDeProdutos.removeChild(listaDeProdutos.firstChild)
     }
 
-    busca.forEach(produto => listaDeProdutos.appendChild(constroiProduto(produto.nome, produto.preco, produto.descricao, produto.imageurl)))
+    busca.forEach(produto => listaDeProdutos.appendChild(listaEConstroiProdutos.constroiProduto(produto.nome, produto.preco, produto.descricao, produto.imageurl)))
 
     if (busca.length == 0) {
         listaDeProdutos.innerHTML = `<p class="produtos__titulo">Nenhum item encontrado.</p>`

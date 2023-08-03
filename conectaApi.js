@@ -36,8 +36,18 @@ async function buscaProduto(stringPesquisa) {
     return conexaoConvertida
 }
 
+async function deleteProduto(produtoID) {
+    const conexao = await fetch(`${endpoint}/${produtoID}`, {
+        method: "DELETE",
+    })
+    const conexaoConvertida = await conexao.json()
+    
+    return conexaoConvertida
+}
+
 export const conectaAPI = {
     getProducts,
     criaNovoProduto,
-    buscaProduto
+    buscaProduto,
+    deleteProduto
 }

@@ -9,6 +9,7 @@
     font-weight: 500;
     line-height: normal;
     font-size: 0.875rem;
+    width: 10rem;
 }
 
 .produto__preco {
@@ -39,10 +40,18 @@
         gap: 0.5rem;
         align-self: stretch;
     }
+
+    .produto__titulo {
+        width: 10.25rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .produto__img {
+        width: 9.75rem;
+    }
+
+    .produto__titulo {
         width: 9.75rem;
     }
 }

@@ -1,5 +1,6 @@
 import { errorMarkers } from "./showErrorMarkers.js";
 import buscarProduto from "./buscaProduto.js"
+import { listaEConstroiProdutos } from "./listaProdutos.js";
 (() => {
 const inputs = document.querySelectorAll(".input__input")
 

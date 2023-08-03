@@ -1,0 +1,25 @@
+.produto {
+    position: relative;
+}
+
+.botao__crud-img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.botoes__crud {
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+}
+
+.botao__crud {
+    background: var(--branco);
+    border-radius: 1rem;
+    border: none;
+    padding-top: 0.2rem;
+}
+
+.botao__crud:hover {
+    cursor: pointer;
+}
