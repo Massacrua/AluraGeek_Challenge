@@ -1,4 +1,6 @@
 import { conectaAPI } from "./conectaApi.js";
+import deletaProduto from "./deletaProduto.js";
+
 const listaDeProdutos = document.querySelector(".produtos__lista-home")
 
 function constroiProduto(nome, preco, descricao, imageurl, id) {
@@ -25,11 +27,11 @@ async function listaProdutos() {
         const produtos = await conectaAPI.getProducts()
         produtos.forEach(produto => listaDeProdutos.appendChild(constroiProduto(produto.nome, produto.preco, produto.descricao, produto.imageurl, produto.id)))
 
-        //FAZENDO FUNÇÃO DELETE AQUI
-
         const botoesDelete = document.querySelectorAll(".delete__produto")
         botoesDelete.forEach(botaoDelete => botaoDelete.addEventListener("click", () => {
-            console.log(botaoDelete.parentElement.querySelector("span").innerText)
+            const produtoID = botaoDelete.parentElement.querySelector("span").innerText
+
+            return deletaProduto(produtoID)
         }))
 
         return produtos

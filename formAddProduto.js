@@ -1,8 +1,10 @@
 import { conectaAPI } from "./conectaApi.js"
 
+const addProductButton = document.querySelector(".addproduto__submit")
 const addProductForm = document.querySelector(".addproduto__form")
 addProductForm.addEventListener("submit", event => {
     event.preventDefault()
+    addProductButton.disabled = "true"
     criarProduto()
 })
 
